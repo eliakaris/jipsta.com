@@ -1,0 +1,1 @@
+It's that time again.  This semester I'm taking Operating Systems, Networking, and World History.  I think it'll be an enjoyable semester.  I'm very excited about Operating Systems, especially because we'll be hacking on <a href="http://www.minix3.org">Minix 3</a>.  Anyway, that's it for now.

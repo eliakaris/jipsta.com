@@ -1,0 +1,15 @@
+{% extends "layout.html"  %}
+{% block title %}home{% endblock %}
+
+{% block head %}
+<link href="{{ MEDIA_URL }}css/vs.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+<article>
+  <h1>Latest Blog Post » <br /><a href="/{{ entry.slug }}">{{ entry.title }}</a></h1>
+  <hr />
+  {{ entry.html }}
+</article>
+{% endblock %}

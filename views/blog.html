@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}blog{% endblock %}
+
+{% block content %}
+{% for year_list in years %}
+<h2>{{ year_list.year }}</h2>
+<ul>
+{% for entry in year_list.entries %}
+  <li><a href="/{{ entry.slug }}">{{ entry.title }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}
+{% endblock %}

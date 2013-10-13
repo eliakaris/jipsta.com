@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ entry.title|escape }}{% endblock %}
+
+{% block content %}
+
+<article>
+
+  <header>
+    <h1>{{ entry.title }}</h1>
+  </header>
+
+  {{ entry.html }}
+
+  <footer>
+    <p>Posted on <time datetime="{{ entry.pub_date }}" pubdate>{{ entry.pretty_pub_date }}</time></p>
+  </footer>
+
+</article>
+
+{% endblock %}

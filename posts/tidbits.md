@@ -1,0 +1,1 @@
+Seattle is a complete culture shock.  I remember once thinking that Springfield, Missouri was a large town.  Oh how I was wrong.  I definitely love the city (although I've explored about .00001% of it).

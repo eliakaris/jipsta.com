@@ -1,0 +1,5 @@
+It's strange that instant messaging systems have been proprietary for so long, especially since instant messaging is more popular than email.   That's why I'm glad to see Google embarrassing the open instant messaging platform, <a href="http://www.jabber.org/">Jabber</a>. I've always loved Jabber, but no one ever used it - until now.    With Google backing Jabber with <a href="http://www.google.com/talk/">Google Talk</a> and now <a href="http://gmail.com">Gmail</a>, an open instant messaging system may pose a threat to Yahoo, AOL, MSN, and others.  I only hope more companies follow Google's lead and use open standards.<br />
+<br />
+Personally, I find Google Talk lacking in a few areas, but that's ok!  I use Trillian!  Isn't interoperability a great thing?!<br />
+<br />
+For those who want to contact me, you can IM me at jpcummins at gmail dot com.<br />

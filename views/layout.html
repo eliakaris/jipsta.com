@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>J.P. Cummins | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link href="/css/highlight.css" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/rss+xml" title="J.P.'s latest blog entries" href="/blog/rss/" />
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <div class="full">
+        <hgroup>
+          <h1><a href="/">J.P. Cummins</a></h1>
+        </hgroup>
+      </div>
+    </header>
+
+    <nav>
+      <div class="full">
+        <ul>
+          <li><a href="/" {% if section == "home" %}class="section"{% endif %}>Home</a></li>
+          <li><a href="/blog/" {% if section == "blog" %}class="section"{% endif %}>Blog</a></li>
+          <li><a href="/about/" {% if section == "about" %}class="section"{% endif %}>About</a></li>
+        </ul>
+        <a href="/blog/rss/" id="rss">Subscribe</a>
+      </div>
+    </nav>
+
+    <section id="content">
+      {% block content_full %}
+      <div class="full">
+        {% block content %}{% endblock %}
+      </div>
+      {% endblock %}
+    </section>
+
+    <footer>
+      <div class="full">
+        <hr />
+        <p>© 2010 J.P. Cummins. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try{
+    var pageTracker = _gat._getTracker("UA-4781965-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </body>
+</html>

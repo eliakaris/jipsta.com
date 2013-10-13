@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'InconsolataMedium';
+    src: local('☺'), url('inconsolata-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'Georgia', serif;
+    color: #222;
+    background-color:#fff;
+}
+
+a {
+    color: fireBrick;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+a:visited {
+    color: fireBrick;
+}
+
+#hd {
+    width:100%;
+    float: left;
+    clear: both;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font: normal normal normal 24px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+h1, h2 {
+    margin: .5em 0;
+}
+
+h1 a,
+h2 a,
+h3 a {
+    text-decoration:none;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited {
+    text-decoration:none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
+    text-decoration:underline;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    padding: 0.3em 0;
+}
+
+pre
+{
+    border: 1px solid #ddd;
+    overflow-x:auto;
+    color: #ddd;
+    margin: 0;
+}
+
+pre code {
+    color: #ddd;
+    background-color: #111;
+}
+
+code {
+    padding: 0;
+    color: #222;
+}
+
+code,
+pre {
+    font-family: 'InconsolataMedium', 'Consolas', 'Andale Mono', 'Monaco', 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+blockquote {
+    padding: 0 1em;
+    margin: 0 1em;
+    border-left: 1px solid #ccc;
+    font-style: italic;
+    line-height: 1.2;
+    font-size:14px;
+    color: #555;
+}
+
+section,
+footer,
+header {
+    display: block;
+}
+
+body>header h1 {
+    font-size: 44px;
+    font-weight:bold;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    margin: 0;
+    padding: .2em 0;
+}
+
+body>header h1 a {
+    text-decoration:none;
+    color:#222;
+}
+
+body>header h1 a:visited {
+    text-decoration:none;
+    color:#222;
+}
+
+body>header h1 a:hover {
+    color:#444;
+}
+
+nav {
+    font-size: 13px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: #eee 1px 1px 1px;
+    display:block;
+    height: 2.2em;
+}
+
+nav .full {
+    height: 2.2em;
+    border-bottom: 1px solid #222;
+}
+
+nav .full ul {
+    margin: .3em 0;
+    padding: 0;
+    float:left;
+}
+
+nav .full li {
+    display: inline-block;
+}
+
+nav .full a.section {
+    color:fireBrick;
+}
+
+nav .full a {
+    text-decoration:none;
+    margin-right: 1em;
+    color: #222;
+}
+
+nav .full a:hover {
+    color:fireBrick;
+}
+
+nav #rss {
+    color: #DF6500;
+    font-size: 13px;
+    float: right;
+    background: url(http://media.jipsta.com/img/rss.png) no-repeat 100% 5px;
+    width: 8em;
+    padding-top: .3em;
+}
+
+section#content {
+    width: 100%;
+    padding: 1em 0;
+    min-height: 400px;
+}
+
+article header {
+    display: block;
+}
+
+article footer {
+    padding: 1em 0;
+}
+
+article footer p {
+    color: #888;
+    font: normal normal normal 12px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+
+article img {
+    margin: 0 auto;
+    display:block;
+}
+
+body>footer {
+    font: normal normal normal 11px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
+    float:none;
+}
+
+hr {
+    width: 100%;
+    height: 0;
+    border: 0;
+    border-top: solid #ccc 1px;
+    border-bottom: solid #fff 1px;
+    margin: 0 0 1.5em 0;
+    display:block;
+}
+
+.full {
+    width: 660px;
+    margin: 0 auto;
+}

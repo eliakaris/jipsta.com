@@ -1,0 +1,3 @@
+<img src="http://jipsta.files.wordpress.com/2006/05/Homepage.gif" alt="My Homepage" /><br />
+<br />
+Above is a screenshot of my Google homepage.  On the right you&#39;ll see that I installed Google Reader.  It&#39;s an RSS aggregator that I use to keep up on the 20+ feeds/blogs I subscribe to.  It&#39;s pretty damn cool.  So if you&#39;re looking for a great RSS reader, check out <a href="http://www.google.com/reader">Google Reader</a>.<br />
