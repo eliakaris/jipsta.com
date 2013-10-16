@@ -14,7 +14,7 @@ app.configure(function() {
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
-var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'));
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(path.join(__dirname, 'views')));
 env.express(app);
 
 blog.init();
