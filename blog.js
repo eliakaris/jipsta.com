@@ -3,8 +3,8 @@ var fs = require('fs'),
     marked = require('marked'),
     hljs = require('highlight.js');
 
-var entriesFilename = './entries.json';
-var postsDirectory = './posts/';
+var entriesFilename = path.resolve(__dirname, './entries.json');
+var postsDirectory = path.resolve(__dirname, './posts/');
 
 var loadBlogEntries = function() {
   var entries_json = fs.readFileSync(entriesFilename);
