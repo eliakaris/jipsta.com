@@ -176,15 +176,6 @@ nav .full a:hover {
     color:fireBrick;
 }
 
-nav #rss {
-    color: #DF6500;
-    font-size: 13px;
-    float: right;
-    background: url(http://media.jipsta.com/img/rss.png) no-repeat 100% 5px;
-    width: 8em;
-    padding-top: .3em;
-}
-
 section#content {
     width: 100%;
     padding: 1em 0;
@@ -227,4 +218,20 @@ hr {
 .full {
     width: 660px;
     margin: 0 auto;
+}
+
+.smugmug {
+  float: left;
+  width: 672px;
+}
+
+.smugmug img {
+  border-radius: 5px;
+  display: inline;
+  max-width: 658px;
+  margin: 15px 15px 0 0;
+}
+
+.smugmug img.key {
+  margin: 0;
 }

@@ -15,7 +15,13 @@ var loadBlogEntries = function() {
     var entry = entries[entry];
     entry.pub_date = new Date(entry.pub_date);
     entry.pretty_pub_date = entry.pretty_pub_date || moment(entry.pub_date).format("MMMM Do, YYYY");
-    entry.html = marked(fs.readFileSync(path.resolve(postsDirectory, entry.slug + '.' + entry.format), 'utf8'));
+
+    var data = fs.readFileSync(path.resolve(postsDirectory, entry.slug + '.' + entry.format), 'utf8');
+
+    if (entry.format == 'md')
+      entry.html = marked(data);
+    else
+      entry.html = data;
   }
 
   global.entries = entries.sort(function (a, b) {

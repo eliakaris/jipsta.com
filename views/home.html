@@ -8,8 +8,7 @@
 {% block content %}
 
 <article>
-  <h1>Latest Blog Post » <br /><a href="/{{ entry.slug }}">{{ entry.title }}</a></h1>
-  <hr />
+  <h1>{{ entry.title }}</h1>
   {{ entry.html }}
 </article>
 {% endblock %}

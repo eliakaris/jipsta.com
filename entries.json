@@ -274,5 +274,17 @@
     "slug": "ported-to-nodejs",
     "pub_date": "2013-10-15",
     "format": "md"
+  },
+  {
+    "title": "Glacier National Park",
+    "slug": "glacier-national-park",
+    "pub_date": "2009-08-28",
+    "format": "html"
+  },
+  {
+    "title": "Desolation Wilderness",
+    "slug": "desolation-wilderness",
+    "pub_date": "2013-09-27",
+    "format": "html"
   }
 ]
