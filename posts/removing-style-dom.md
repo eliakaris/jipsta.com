@@ -2,7 +2,7 @@ Pop quiz.  When removing an element from the DOM containing a CSS node, will the
 
 Here's an example:
 
-~~~xml
+```xml
 <!DOCTYPE html>
 <head>
     <title>CSS DOM Removal Test</title>
@@ -44,6 +44,6 @@ function removeCss() {
 </script>
 
 </html>
-~~~
+```
 
 What will happen when "Remove CSS" is clicked? Click [here](/projects/css-dom-removal-test/) to find out.

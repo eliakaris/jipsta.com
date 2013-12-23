@@ -8,13 +8,13 @@ Having to do this three stage process on each checkin seems silly (yes, I know a
 
 Git then pissed me off when I tried to check in a file with extra whitespace.  It flat out refused to let this happen.
 
-~~~bash
+```bash
 # git commit
 * You have some suspicious patch lines:
 *
 * In test.py
 * trailing whitespace (line 20)
-~~~
+```
 
 Why is the VCS inspecting the contents of my code?  Shouldn't it be totally agnostic to the contents of the file?  This is just a standard out-of-the-box installation of Git on Windows.  I haven't customized a thing.  Frustrating.
 

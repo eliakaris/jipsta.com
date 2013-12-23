@@ -1,2 +1,3 @@
 Joel Spolsky has an excellent articale about what he calls, "JavaSchools".  I typically refer to them as CIS majors.   Sadly, I see the same trend happening at my college.
-<a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html</a>
+
+http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html

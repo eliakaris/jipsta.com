@@ -8,5 +8,8 @@ exports.init = function(app) {
   app.get('/blog', blog.index);
   app.get('/blog/:year/:month/:day/:slug', blog.redirectOr404);
   app.get('/projects/:slug', blog.redirectOr404);
+  app.get('/rss', blog.renderRss);
+
+  // catch all
   app.get('/:slug', blog.renderEntry);
 };

@@ -8,7 +8,7 @@ Don't worry.  With a little command line voodoo, you can work around this proble
 
 Here's a really useful script that I found on [pastebin](http://pastebin.com/pj7gh5Q5):
 
-~~~bash
+```bash
 #!/bin/sh
 # For people who like case-sensitive filesystems and games.
 # It should still work for people who don't care what case their filesystem is.
@@ -74,6 +74,6 @@ fi
 # Link to the disk image.
 ln -fnsv "${VOLAPPSUPPORT}" "${APPSUPPORT}"
 ln -fnsv "${VOLSTEAMCONTENT}" "${STEAMCONTENT}"
-~~~
+```
 
 Save this as `steam.sh`, execute it with root permissions `sudo bash steam.sh`, then you can launch Steam.app from /Volumes/Steam.

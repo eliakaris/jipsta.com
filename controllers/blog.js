@@ -1,4 +1,4 @@
-function getEntry(slug) {
+function getEntry (slug) {
   var entries = global.entries;
 
   var found = false;
@@ -12,7 +12,7 @@ function getEntry(slug) {
   return null;
 }
 
-exports.index = function(req, res) {
+exports.index = function (req, res) {
   var entries = global.entries;
 
   // Sort blog entries by year
@@ -36,12 +36,12 @@ exports.index = function(req, res) {
   res.render('blog.html', { years: years, section: "blog" });
 };
 
-exports.redirectOr404 = function(req, res) {
+exports.redirectOr404 = function (req, res) {
   var slug = req.params.slug;
   getEntry(slug) ? res.redirect(301, '/' + slug) : res.send(404);
 }
 
-exports.renderEntry = function(req, res) {
+exports.renderEntry = function (req, res) {
   var entry = getEntry(req.params.slug);
 
   if (!entry) {
@@ -50,4 +50,9 @@ exports.renderEntry = function(req, res) {
   }
 
   res.render('entry.html', { entry: entry, section: "blog" });
+}
+
+exports.renderRss = function (req, res) {
+  res.set('Content-Type', 'application/rss+xml');
+  res.render('rss.html', { entries: global.entries.slice(0,20) });
 }
