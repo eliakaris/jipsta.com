@@ -1,6 +1,6 @@
 Today I discovered that Internet Explorer drops [ClearType](http://en.wikipedia.org/wiki/ClearType) whenever a [CSS Filter](http://msdn.microsoft.com/en-us/library/ms532853(v=VS.85).aspx) is applied.  The image below is a close-up of two `<div>`'s.  The first doesn't have a Filter,  the other does.  As you can see, ClearType's subpixel rendering is dropped.
 
-![ClearType is dropped when a CSS filter is applied](/img/NoClearType.png)
+![ClearType is dropped when a CSS filter is applied](http://jipsta.com/img/NoClearType.png)
 
 [Several](http://stackoverflow.com/questions/411058/ie-is-losing-cleartype) [people](http://tanny.ica.com/ica/tko/tkoblog.nsf/dx/has-ie7-broken-css-filters) have noticed the same behavior.
 

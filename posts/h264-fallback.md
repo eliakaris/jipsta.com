@@ -34,7 +34,7 @@ td {
 
 <h2>Code</h2>
 
-<p>Check out the <a href="http://bitbucket.org/jcummins/h264fallback/overview">BitBucket code repository</a> or <a href="{{ MEDIA_URL }}js/h264Fallback-0.1.min.js">download the JavaScript file</a> (right-click, Save As).</p>
+<p>Check out the <a href="http://bitbucket.org/jcummins/h264fallback/overview">BitBucket code repository</a> or <a href="/js/h264Fallback-0.1.min.js">download the JavaScript file</a> (right-click, Save As).</p>
 
 <p>Include each video on your page like so:</p>
 
@@ -61,7 +61,7 @@ h264Fallback.init({
 <h2>Example</h2>
 
 <div class="h264Fallback" data-height="144" data-width="478">
-  <p>Video download: <a href="{{ MEDIA_URL }}videos/Hover-YouTube.mov" class="videoLink">Hover-YouTube.mov</a></p>
+  <p>Video download: <a href="/videos/Hover-YouTube.mov" class="videoLink">Hover-YouTube.mov</a></p>
 </div>
 
 ```xml
@@ -126,6 +126,6 @@ h264Fallback.init({
 
 <script>
 h264Fallback.init({
-  player: '{{ MEDIA_URL }}videos/player.swf'
+  player: '/videos/player.swf'
 });
 </script>

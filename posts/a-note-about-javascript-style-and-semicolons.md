@@ -35,7 +35,7 @@ var a = foo();
 alert(a);
 ```
 
-“a” is undefined!  Because this statement,
+'a' is undefined!  Because this statement,
 
 ```javascript
 return

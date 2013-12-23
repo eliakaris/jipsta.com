@@ -1,4 +1,4 @@
-![Panoramic View of Bellevue](/img/CityCenter.png)
+![Panoramic View of Bellevue](http://jipsta.com/img/CityCenter.png)
 
 This is my first attempt at creating a panoramic image.  I took 10 images in portrait orientation and stitched them together with Adobe Photoshop Elements 8.
 

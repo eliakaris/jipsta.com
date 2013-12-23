@@ -1,4 +1,4 @@
-Tonight I created a [Geolocation in HTML 5](/projects/geolocation) project. 
+Tonight I created a [Geolocation in HTML 5](http://jipsta.com/projects/geolocation) project.
 
 > One of the really cool features of HTML 5 is the [Geolocation API](http://www.w3.org/TR/geolocation-API/). Geolocation lets users to share their location with trusted websites. When the user allows the website to gather their location, the browser submits latitude and longitude to the website through a JavaScript callback. The website can then use the information to do fancy location-aware things like finding a nearby theater or mapping houses for sale in your neighborhood.
 

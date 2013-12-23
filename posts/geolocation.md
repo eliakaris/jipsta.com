@@ -73,7 +73,7 @@ navigator.geolocation.getCurrentPosition(callback)
 
 <img src="/img/geolocation.png" />
 
-<p>Thankfully, the <a href="http://www.w3.org/TR/geolocation-API/#security">geolocation API states</a> that browsers “must not send location information to Web sites without the express permission of the user.” </p>
+<p>Thankfully, the <a href="http://www.w3.org/TR/geolocation-API/#security">geolocation API states</a> that browsers "must not send location information to Web sites without the express permission of the user." </p>
 
 <p>Once permission is granted, the JavaScript callback is invoked with a location object.  The object is populated with all sorts of goodies such as latitude, longitude, altitude, heading, and speed.</p>
 

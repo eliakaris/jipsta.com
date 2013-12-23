@@ -46,4 +46,4 @@ function removeCss() {
 </html>
 ```
 
-What will happen when "Remove CSS" is clicked? Click [here](/projects/css-dom-removal-test/) to find out.
+What will happen when "Remove CSS" is clicked? Click [here](http://jipsta.com/projects/css-dom-removal-test/) to find out.
