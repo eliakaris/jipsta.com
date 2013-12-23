@@ -2,20 +2,20 @@ There's a subtle design flaw in JavaScript that can lead to errors if you use th
 
 Here's a sample of our C++ style:
 
-~~~cpp
+```cpp
 void MyClass::foo(string bar)
 {
     // do something with bar
 }
-~~~
+```
 
 and here's the JavaScript in question:
 
-~~~javascript
+```javascript
 function foo(bar) {
     // do something with bar
 }
-~~~
+```
 
 Notice the difference?  The opening curly brace in JavaScript doesn't start on a new line.
 
@@ -23,7 +23,7 @@ Don't get me wrong, I'm not trying to be a trend setter nor am I trying to piss 
 
 So why do I break the rules for JavaScript?  Because the above C++ style can *break JavaScript*.  The technical reason is that JavaScript [doesn't care about terminating semicolons](http://bclary.com/2004/11/07/#a-7.9).  Meaning that if you forget a semicolon, it will place one for you, even where doesn't make sense.  IMHO, it’s a flaw in the language because you can get in situations like this:
 
-~~~javascript
+```javascript
 function foo()
 {
     return
@@ -33,22 +33,22 @@ function foo()
 }
 var a = foo();
 alert(a);
-~~~
+```
 
 “a” is undefined!  Because this statement,
 
-~~~javascript
+```javascript
 return
 {
     bar: 'baz'
 };
-~~~
+```
 
 is parsed as:
 
-~~~javascript
+```javascript
 return;
 {
     bar: 'baz'
 };
-~~~
+```

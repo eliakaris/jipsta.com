@@ -11,22 +11,22 @@ Today's issue revolves around the use of the `var` keyword.  It's a relatively n
 
 Thus, the following two declarations of `i` are equivalent:
 
-~~~cs
+```cs
 var i = 10; // implicitly typed
 int i = 10; // explicitly typed
-~~~
+```
 
 The var keyword is great because it solves one of my pet-peeves with C# and Java -- having to write type names twice:
 
-~~~cs
+```cs
 MyType foo = new MyType();
-~~~
+```
 
 This is verbose and unnecessary. `var` optimizes for the lazy by reducing the number of characters that have to be typed.  The fewer the characters, the shorter the line, the easier it is to read.  See for yourself:
 
-~~~cs
+```cs
 MyCustomTypeWithAVeryLongName foo = new MyCustomTypeWithAVeryLongName();
 var foo = new MyCustomTypeWithAVeryLongName();
-~~~
+```
 
 The debate still rages on and I doubt anyone will cave in until we come up with some coding guidelines.  In the meantime, I will continue to propagate `var` throughout our codebase.

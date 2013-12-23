@@ -1,7 +1,8 @@
-I just completed my first <a href="http://www.arduino.cc/">Arduino</a>  project.  It's a simple circuit that controls the brightness and color of LED.
+I just completed my first [Arduino](http://www.arduino.cc) project.  It's a simple circuit that controls the brightness and color of LED.
 
 
 ```cpp
+
 void loop()
 {
   r_val = digitalRead(BUTTON_R);
