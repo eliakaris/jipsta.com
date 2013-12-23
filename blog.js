@@ -14,6 +14,7 @@ var loadBlogEntries = function() {
   for (var entry in entries) {
     var entry = entries[entry];
     entry.pub_date = new Date(entry.pub_date);
+    entry.pub_date_rfc822 = moment(entry.pub_date).format('ddd, DD MMM YYYY HH:mm:ss ZZ');
     entry.pretty_pub_date = entry.pretty_pub_date || moment(entry.pub_date).format("MMMM Do, YYYY");
 
     var data = fs.readFileSync(path.resolve(postsDirectory, entry.slug + '.' + entry.format), 'utf8');

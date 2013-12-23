@@ -4,17 +4,17 @@
     <title>Blog of J.P. Cummins</title>
     <description>RSS feed for jipsta.com</description>
     <link>http://jipsta.com</link>
-    <lastBuildDate>{{ entries[0].pub_date }}</lastBuildDate>
-    <pubDate>{{ entries[0].pub_date }}</pubDate>
+    <lastBuildDate>{{ entries[0].pub_date_rfc822 }}</lastBuildDate>
+    <pubDate>{{ entries[0].pub_date_rfc822 }}</pubDate>
     <ttl>720</ttl>
     {% for entry in entries %}
     <item>
       <title>{{ entry.title }}</title>
       <link>http://jipsta.com/{{ entry.slug }}</link>
       <description>{{ entry.html|escape }}</description>
-      <author>J.P. Cummins</author>
-      <guid>{{ entry.slug }}</guid>
-      <pubDate>{{ entry.pub_date }}</pubDate>
+      <author>jpcummins@gmail.com (J.P. Cummins)</author>
+      <guid>http://jipsta.com/{{ entry.slug }}</guid>
+      <pubDate>{{ entry.pub_date_rfc822 }}</pubDate>
     </item>
     {% endfor %}
   </channel>
