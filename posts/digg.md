@@ -2,6 +2,6 @@ Way back in the day, I used to frequent [Digg.com](http://digg.com) for my daily
 
 But now I'm back.
 
-Digg is now under new management, the site has been dramatically simplified, and now they're sporting [an all new RSS reader](http://blog.digg.com/post/45355701332/were-building-a-reader). If you're a dinosaur like me, and still read RSS feeds, check out [Digg Reader](http://digg.com/reader). It's great!
+Digg is now under new management, the site has been dramatically simplified, and now they're sporting [an all new RSS reader](http://blog.digg.com/post/45355701332/were-building-a-reader). If you're a dinosaur like me and still read RSS feeds, check out [Digg Reader](http://digg.com/reader). It's great!
 
 ![Digg Reader](http://jipsta.com/img/digg.png)

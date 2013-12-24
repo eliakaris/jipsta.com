@@ -1,5 +1,11 @@
 [
   {
+    "title": "Digg Reader",
+    "slug": "digg",
+    "pub_date": "2013-12-23 16:03:00",
+    "format": "md"
+  },
+  {
     "title": "I have a blog.",
     "slug": "i-have-a-blog",
     "pub_date": "2005-12-26 03:39:00",

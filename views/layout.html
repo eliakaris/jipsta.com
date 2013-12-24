@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>J.P. Cummins | {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="/css/base.css" />
-    <link href="/css/highlight.css" rel="stylesheet" type="text/css" />
     <link rel="alternate" type="application/rss+xml" href="/rss"/>
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
+    <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
     {% block head %}{% endblock %}
   </head>
 
@@ -44,13 +45,14 @@
     </footer>
 
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try{
+      var pageTracker = _gat._getTracker("UA-4781965-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
     </script>
-    <script type="text/javascript">
-    try{
-    var pageTracker = _gat._getTracker("UA-4781965-1");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
   </body>
 </html>
