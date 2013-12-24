@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
     <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Inconsolata' rel='stylesheet' type='text/css'>
     {% block head %}{% endblock %}
   </head>
 
@@ -16,9 +17,10 @@
 
     <nav>
       <div class="full">
+        <h1><a href="/">J.P. Cummins</a></h1>
         <ul>
           <li><a href="/" {% if section == "home" %}class="section"{% endif %}>Home</a></li>
-          <li><a href="/blog/" {% if section == "blog" %}class="section"{% endif %}>Blog</a></li>
+          <li><a href="/blog/" {% if section == "blog" %}class="section"{% endif %}>Archive</a></li>
           <li><a href="/about/" {% if section == "about" %}class="section"{% endif %}>About</a></li>
         </ul>
       </div>

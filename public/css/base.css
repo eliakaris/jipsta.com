@@ -1,19 +1,12 @@
-@font-face {
-    font-family: 'InconsolataMedium';
-    src: local('☺'), url('inconsolata-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    font-family: 'Georgia', serif;
+    font-family: Georgia, serif;
     color: #222;
     background-color:#fff;
 }
@@ -40,8 +33,8 @@ a:visited {
 h1, h2, h3 {
     margin: 0;
     padding: 0;
-    font: normal normal normal 24px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
-    text-shadow: #fff 1px 1px 1px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
 }
 
 h1, h2 {
@@ -52,6 +45,7 @@ h1 a,
 h2 a,
 h3 a {
     text-decoration:none;
+    color: #222;
 }
 
 h1 a:visited,
@@ -66,8 +60,12 @@ h3 a:hover {
     text-decoration:underline;
 }
 
+h1 {
+    font-size: 26px;
+}
+
 h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h3 {
@@ -76,27 +74,19 @@ h3 {
 
 pre
 {
-    border: 1px solid #ddd;
     overflow-x:auto;
-    color: #ddd;
     margin: 0;
-}
-
-pre code {
-    color: #ddd;
-    background-color: #111;
 }
 
 code {
     padding: 0;
-    color: #222;
 }
 
 code,
 pre {
-    font-family: 'InconsolataMedium', 'Consolas', 'Andale Mono', 'Monaco', 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
-    font-size: 16px;
-    line-height: 1.4em;
+    font-family: 'Inconsolata', 'Consolas', 'Andale Mono', 'Monaco', 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+    font-size: 15px;
+    line-height: 1.2em;
 }
 
 blockquote {
@@ -115,47 +105,41 @@ header {
     display: block;
 }
 
-body>header h1 {
-    font-size: 44px;
-    font-weight:bold;
-    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;;
-    margin: 0;
-    padding: .2em 0;
-}
-
-body>header h1 a {
+header h1 a {
     text-decoration:none;
     color:#222;
 }
 
-body>header h1 a:visited {
+header h1 a:visited {
     text-decoration:none;
     color:#222;
 }
 
-body>header h1 a:hover {
+header h1 a:hover {
     color:#444;
+    text-decoration:none;
 }
 
 nav {
-    font-size: 13px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: #eee 1px 1px 1px;
     display:block;
-    height: 2.2em;
-    background-color: #eee;
+    background-image: url(/img/background-header.png);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+nav .full h1 {
+    display: inline-block;
 }
 
 nav .full {
-    height: 2.2em;
+    height: 3em;
 }
 
 nav .full ul {
-    margin: .3em 0;
+    margin: 1em 0;
     padding: 0;
-    float:left;
+    float:right;
 }
 
 nav .full li {
@@ -163,17 +147,13 @@ nav .full li {
 }
 
 nav .full a.section {
-    color:fireBrick;
+    color: #b22222;
 }
 
 nav .full a {
     text-decoration:none;
     margin-right: 1em;
-    color: #222;
-}
-
-nav .full a:hover {
-    color:fireBrick;
+    color: #fff;
 }
 
 section#content {
@@ -189,7 +169,7 @@ article header {
 }
 
 article header h1 {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 header .meta p {
@@ -197,6 +177,14 @@ header .meta p {
     font: normal normal normal 12px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
     display: inline-block;
     margin: 0;
+}
+
+header .meta p a {
+    color: #888;
+}
+
+header .meta p a:hover {
+    color: fireBrick;
 }
 
 header .meta .tweet {
@@ -243,4 +231,8 @@ hr {
 
 .smugmug img.key {
   margin: 0;
+}
+
+img.me {
+    border-radius: 5px;
 }

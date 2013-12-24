@@ -1,101 +1,127 @@
 /*
 
-Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
 
 pre code {
-  display: block;
-  padding: 0.5em;
-  background: #23241f;
+  display: block; padding: 0.5em;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #eee;
 }
-pre .tag,
-pre code {
-  color: #f8f8f2;
-}
-pre .keyword,
-pre .function,
-pre .literal,
-pre .change,
-pre .winutils,
-pre .flow,
-pre .lisp .title,
-pre .clojure .built_in,
-pre .nginx .title,
-pre .tex .special {
-  color: #66d9ef;
-}
-pre .variable,
-pre .params {
-  color: #fd9720;
-}
-pre .constant {
-  color: #66d9ef;
-}
-pre .title,
-pre .class .title,
-pre .css .class {
-  color: #a6e22e;
-}
-pre .attribute,
-pre .symbol,
-pre .symbol .string,
-pre .tag .title,
-pre .value,
-pre .css .tag {
-  color: #f92672;
-}
-pre .number,
-pre .preprocessor,
-pre .regexp {
-  color: #ae81ff;
-}
-pre .tag .value,
-pre .string,
-pre .css .id,
-pre .subst,
-pre .haskell .type,
-pre .ruby .class .parent,
-pre .built_in,
-pre .sql .aggregate,
-pre .django .template_tag,
-pre .django .variable,
-pre .smalltalk .class,
-pre .django .filter .argument,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .attr_selector,
-pre .pseudo,
-pre .addition,
-pre .stream,
-pre .envvar,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .tex .command,
-pre .prompt {
-  color: #e6db74;
-}
+
 pre .comment,
-pre .javadoc,
-pre .java .annotation,
-pre .python .decorator,
 pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+}
+
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id,
+pre .coffeescript .params,
+pre .scss .preprocessor {
+  color: #900;
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pragma,
 pre .pi,
 pre .doctype,
-pre .deletion,
 pre .shebang,
-pre .apache .sqbracket,
-pre .tex .formula {
-  color: #75715e;
+pre .cdata {
+  color: #999;
 }
-pre .coffeescript .javascript,
-pre .javascript .xml,
-pre .tex .formula {
-  opacity: 0.5;
+
+pre .deletion {
+  background: #fdd
 }
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .xml .css,
-pre .xml .cdata {
-  opacity: 0.5;
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
 }
