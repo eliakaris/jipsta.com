@@ -145,11 +145,11 @@ nav {
     text-shadow: #eee 1px 1px 1px;
     display:block;
     height: 2.2em;
+    background-color: #eee;
 }
 
 nav .full {
     height: 2.2em;
-    border-bottom: 1px solid #222;
 }
 
 nav .full ul {
@@ -178,21 +178,29 @@ nav .full a:hover {
 
 section#content {
     width: 100%;
-    padding: 1em 0;
     min-height: 400px;
+    margin: 20px 0;
 }
 
 article header {
     display: block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
 }
 
-article footer {
-    padding: 1em 0;
+article header h1 {
+    margin-bottom: 2px;
 }
 
-article footer p {
+header .meta p {
     color: #888;
     font: normal normal normal 12px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
+    display: inline-block;
+    margin: 0;
+}
+
+header .meta .tweet {
+    float: right;
 }
 
 article img {

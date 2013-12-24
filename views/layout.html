@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    {% block meta %}{% endblock %}
     <title>J.P. Cummins | {% block title %}{% endblock %}</title>
     <link rel="alternate" type="application/rss+xml" href="/rss"/>
     <link rel="stylesheet" type="text/css" href="/css/base.css" />
@@ -11,13 +12,6 @@
   </head>
 
   <body>
-    <header>
-      <div class="full">
-        <hgroup>
-          <h1><a href="/">J.P. Cummins</a></h1>
-        </hgroup>
-      </div>
-    </header>
 
     <nav>
       <div class="full">

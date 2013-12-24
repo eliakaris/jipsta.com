@@ -2,7 +2,8 @@ var fs = require('fs'),
     moment = require('moment'),
     marked = require('marked'),
     hljs = require('highlight.js'),
-    path = require('path');
+    path = require('path'),
+    S = require('string');
 
 var entriesFilename = path.resolve(__dirname, './entries.json');
 var postsDirectory = path.resolve(__dirname, './posts');
@@ -23,6 +24,8 @@ var loadBlogEntries = function() {
       entry.html = marked(data);
     else
       entry.html = data;
+
+    entry.summary = S(entry.html).stripTags().truncate(200);
   }
 
   global.entries = entries.sort(function (a, b) {
