@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ entry.title }}</h1>
+  <div class="meta">
+    <p>Posted <time datetime="{{ entry.pub_date }}" pubdate>{{ entry.pretty_pub_date }}</time></p>
+    <div class="tweet">
+      <a href="https://twitter.com/share?url=http://jipsta.com/{{entry.slug}}&text={% if entry.tweet %}{{ entry.tweet }}{% else %}{{entry.title}}{% endif %}" class="twitter-share-button" data-lang="en">Tweet</a>
+    </div>
+  </div>
+</header>

@@ -2,27 +2,12 @@
 
 {% block title %}{{ entry.title|escape }}{% endblock %}
 {% block meta %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@jcummins">
-<meta name="twitter:creator" content="@jcummins">
-<meta name="twitter:title" content="{{ entry.title }}">
-<meta name="twitter:description" content="{{ entry.summary }}">
+{% include "meta_twitter_card.html" %}
 {% endblock %}
 
 {% block content %}
 <article>
-
-  <header>
-    <h1>{{ entry.title }}</h1>
-    <div class="meta">
-      <p>Posted <time datetime="{{ entry.pub_date }}" pubdate>{{ entry.pretty_pub_date }}</time></p>
-      <div class="tweet">
-        <a href="https://twitter.com/share?url=http://jipsta.com/{{entry.slug}}&text={% if entry.tweet %}{{ entry.tweet }}{% else %}{{entry.title}}{% endif %}" class="twitter-share-button" data-lang="en">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </header>
-
+  {% include "header.html" %}
   {{ entry.html }}
 </article>
 {% endblock %}
