@@ -15,7 +15,7 @@
   {%- for entry in entries %}
   <url>
     <loc>http://jipsta.com/{{ entry.slug }}</loc>
-    <lastmod>{{ entry.pub_date }}</lastmod>
+    <lastmod>{{ entry.pub_date_sitemap }}</lastmod>
     <changefreq>{% if loop.first %}daily{% else %}monthly{% endif %}</changefreq>
   </url>
   {%- endfor %}
