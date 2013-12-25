@@ -1,7 +1,8 @@
 <header>
-  <h1><a href="http://jipsta.com/{{entry.slug}}">{{ entry.title }}</a></h1>
+  <h1><a href="/{{entry.slug}}" itemprop="url">{{ entry.title }}</a></h1>
   <div class="meta">
-    <p><time datetime="{{ entry.pub_date }}" pubdate>{{ entry.pretty_pub_date }}</time> ∙ <a href="https://github.com/jpcummins/jipsta.com/blob/master/posts/{{ entry.slug }}.md">History</a></p>
+    <p><time itemprop="dateCreated" datetime="{{ entry.pub_date }}" pubdate>{{ entry.pretty_pub_date }}</time> ∙ <a href="https://github.com/jpcummins/jipsta.com/blob/master/posts/{{ entry.slug }}.md">History</a></p>
+
     <div class="tweet">
       <a href="https://twitter.com/share?url=http://jipsta.com/{{entry.slug}}&text={% if entry.tweet %}{{ entry.tweet }}{% else %}{{entry.title}}{% endif %}" class="twitter-share-button" data-lang="en">Tweet</a>
     </div>

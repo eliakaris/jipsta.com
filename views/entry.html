@@ -1,12 +1,20 @@
 {% extends "layout.html" %}
 
+{% block doctype %}
+<!doctype html itemscope itemtype="http://schema.org/BlogPosting">
+{% endblock %}
+
 {% block title %}{{ entry.title|escape }}{% endblock %}
+
 {% block meta %}
 {% include "meta_twitter_card.html" %}
+<meta itemprop="author" content="J.P. Cummins">
+<meta itemprop="name" content="{{ entry.title }}">
+<meta itemprop="description" content="{{ entry.summary }}">
 {% endblock %}
 
 {% block content %}
-<article>
+<article itemscope itemtype="http://schema.org/BlogPosting" url="http://jipsta.com/{{ entry.slug }}">
   {% include "header.html" %}
   {{ entry.html }}
 </article>

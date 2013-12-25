@@ -173,11 +173,16 @@ article header h1 {
     margin-bottom: 10px;
 }
 
+header .meta {
+    overflow: auto;
+    padding-bottom: 4px;
+}
+
 header .meta p {
     color: #888;
     font: normal normal normal 12px/1.2em 'Lucida Grande', Verdana, Arial, sans-serif;
     display: inline-block;
-    margin: 0;
+    margin: 8px 0 0 0;
 }
 
 header .meta p a {
@@ -236,4 +241,8 @@ hr {
 
 img.me {
     border-radius: 5px;
+}
+
+.hidden {
+    display: none;
 }

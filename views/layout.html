@@ -1,4 +1,10 @@
-<!doctype html>
+{% block doctype %}
+<!doctype html itemscope itemtype="http://schema.org/Blog">
+<meta itemprop="creator" content="J.P. Cummins">
+<meta itemprop="name" content="jipsta.com">
+<meta itemprop="description" content="Personal blog for J.P. Cummins">
+{% endblock %}
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -37,6 +43,19 @@
     <footer>
       <div class="full">
         <hr />
+
+        <div itemscope itemtype="http://data-vocabulary.org/Person" class="hidden">
+          <span itemprop="name">J.P. Cummins</span>,
+          <a href="http://jipsta.com" itemprop="url">jipsta.com</a>
+          <span itemprop="address" itemscope
+            itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="locality">San Francisco</span>,
+            <span itemprop="region">California</span>
+          </span>
+          <span itemprop="title">Engineering Manager</span>
+          <span itemprop="affiliation">Twitter</span>
+        </div>
+
         <p>© <a href="/about">J.P. Cummins</a>. All Rights Reserved.</p>
       </div>
     </footer>
