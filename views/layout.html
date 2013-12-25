@@ -1,26 +1,22 @@
-{% block doctype %}
-<!doctype html itemscope itemtype="http://schema.org/Blog">
+{%- block doctype %}<!doctype html itemscope itemtype="http://schema.org/Blog">
 <meta itemprop="creator" content="J.P. Cummins">
 <meta itemprop="name" content="jipsta.com">
 <meta itemprop="description" content="Personal blog for J.P. Cummins">
-{% endblock %}
+{%- endblock %}
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    {% block meta %}{% endblock %}
+    {%- block meta %}{%- endblock %}
     <title>J.P. Cummins | {% block title %}{% endblock %}</title>
     <link rel="alternate" type="application/rss+xml" href="/rss"/>
     <link rel="stylesheet" type="text/css" href="/css/base.css" />
     <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
-    <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Inconsolata' rel='stylesheet' type='text/css'>
-    {% block head %}{% endblock %}
+    {%- block head %}{%- endblock %}
   </head>
 
   <body>
-
     <nav>
       <div class="full">
         <h1><a href="/">J.P. Cummins</a></h1>
@@ -33,11 +29,11 @@
     </nav>
 
     <section id="content">
-      {% block content_full %}
+      {%- block content_full %}
       <div class="full">
-        {% block content %}{% endblock %}
+        {%- block content %}{%- endblock %}
       </div>
-      {% endblock %}
+      {%- endblock %}
     </section>
 
     <footer>
@@ -60,6 +56,7 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

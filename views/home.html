@@ -1,12 +1,6 @@
-{% extends "layout.html"  %}
+{%- extends "layout.html"  %}
 {% block title %}home{% endblock %}
 
-{% block meta %}
-{% endblock %}
-
 {% block content %}
-<article>
-  {% include "header.html" %}
-  {{ entry.html }}
-</article>
+  {% include "article.html" %}
 {% endblock %}
