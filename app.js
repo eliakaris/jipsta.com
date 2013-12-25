@@ -11,7 +11,6 @@ app.configure(function() {
   app.set('port', 3001);
   app.set('views', __dirname + '/views');
   app.use(app.router);
-  app.use('/robots.txt', express.static(path.join(__dirname, 'robots.txt')));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 

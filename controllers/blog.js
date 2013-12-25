@@ -41,12 +41,11 @@ exports.redirectOr404 = function (req, res) {
   getEntry(slug) ? res.redirect(301, '/' + slug) : res.send(404);
 }
 
-exports.renderEntry = function (req, res) {
+exports.renderEntry = function (req, res, next) {
   var entry = getEntry(req.params.slug);
 
   if (!entry) {
-    res.send(404);
-    return;
+    return next();
   }
 
   res.render('entry.html', { entry: entry, section: "blog" });
