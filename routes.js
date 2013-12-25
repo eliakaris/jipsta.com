@@ -9,6 +9,7 @@ exports.init = function(app) {
   app.get('/blog/:year/:month/:day/:slug', blog.redirectOr404);
   app.get('/projects/:slug', blog.redirectOr404);
   app.get('/rss', blog.renderRss);
+  app.get('/sitemap.xml', home.sitemap);
 
   // catch all
   app.get('/:slug', blog.renderEntry);

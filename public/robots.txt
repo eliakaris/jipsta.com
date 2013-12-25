@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /stats/
+Sitemap: http://jipsta.com/sitemap.xml
