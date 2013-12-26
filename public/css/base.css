@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 1.6em;
+    font-size: 18px;
+    line-height: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 h3 {
@@ -86,6 +86,7 @@ code {
 code,
 pre {
     font-family: 'Inconsolata', 'Consolas', 'Andale Mono', 'Monaco', 'Liberation Mono', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', monospace;
+    line-height: 1.2em;
 }
 
 blockquote {
@@ -121,7 +122,7 @@ nav {
     display:block;
     background-image: url(/img/background-header.png);
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-weight: 600
+    font-weight: 600;
 }
 
 nav .full h1 {
@@ -131,7 +132,8 @@ nav .full h1 {
 nav .full ul {
     margin: 1em 0;
     padding: 0;
-    float:right;
+    float: right;
+    display: inline-block;
 }
 
 nav .full li {
@@ -144,8 +146,16 @@ nav .full a.section {
 
 nav .full a {
     text-decoration:none;
-    margin-right: 1em;
     color: #fff;
+}
+
+nav .full li {
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
+nav .full li:last-child {
+    margin-right: 0;
 }
 
 section#content {
@@ -242,6 +252,7 @@ img.me {
      }
 
      body {
-        font-size: 30px;
+        font-size: 50px;
+        line-height: 80px;
      }
 }
