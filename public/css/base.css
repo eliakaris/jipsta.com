@@ -201,8 +201,9 @@ article img {
 }
 
 body>footer {
-    font: normal normal normal .8em 'Lucida Grande', Verdana, Arial, sans-serif;
+    font: normal normal normal .7em 'Lucida Grande', Verdana, Arial, sans-serif;
     float:none;
+    color: #888;
 }
 
 hr {
