@@ -126,6 +126,7 @@ nav {
 nav .full h1 {
     display: inline-block;
     font-size: 1.8em;
+    float: left;
 }
 
 nav .full ul {
@@ -197,7 +198,11 @@ article img {
 
 body>footer {
     font: normal normal normal .7em 'Lucida Grande', Verdana, Arial, sans-serif;
-    float:none;
+    color: #888;
+}
+
+body>footer a,
+body>footer a:visited {
     color: #888;
 }
 
